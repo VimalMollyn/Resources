@@ -13,3 +13,5 @@ If your PDF has disappeared from the background of your note, use the following 
 8. Go back into the "PDFs" folder and rename the PDF with the pasted string
 9. Navigate out of the file and compress the folder back into a .Zip file
 10. Change the .Zip extension into a .Note, export to your iPad, and import into Notability
+
+_Ref_: https://support.gingerlabs.com/hc/en-us/articles/360044382131-Restoring-Missing-PDFs
