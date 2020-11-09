@@ -109,7 +109,25 @@
      $ source ~/.bashrc
      ```
 
-  Now to run `jupyter-notebook` just type `jpn` !
+  Now to run `jupyter-notebook` just type `jpn` !n
+  
+- #### Why is my root partition full?!
+
+  One reason might be that there are a lot of *deleted* but *open* files taking up space!
+
+  Check if there are any *open deleted files*:
+
+  ```bash
+  $ lsof | grep ('deleted')
+  ```
+
+  If you see a large number of files, proceed to the next step:
+
+  ```bash
+  $ lsof | grep deleted | awk '{print $2}' | xargs kill -9
+  ```
+
+  This basically greps all the deleted open files and then takes their PIDs (using awk) and then kills them.
 
 ### Visual Studio
 
